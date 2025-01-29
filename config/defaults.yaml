@@ -1,0 +1,31 @@
+cifar10:
+  CNN: 234006
+  VGG8: 268814
+  ResNet10: 347178
+  ResNet12: 523242
+  ResNet18: 565386
+
+cifar100:
+  CNN: 239856
+  VGG8: 274664
+  ResNet10: 353028
+  ResNet12: 529092
+  ResNet18: 571236
+  squeezenet1_1: 773796 
+  squeezenet1_0: 786724
+  MLP: 408100 
+
+tiny_imageNet:
+  CNN: 246356
+  VGG8: 281164
+  ResNet10: 359528
+  ResNet12: 535592
+  ResNet18: 577736
+  
+emnist:
+  CNN: 237098
+  VGG8: 271906
+  ResNet10: 350270
+  ResNet12: 526334
+  ResNet18: 568478
+  
