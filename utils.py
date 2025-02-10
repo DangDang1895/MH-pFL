@@ -51,64 +51,14 @@ def get_args(parser):
     parser.add_argument("--topk", type=str2bool, default=False, help="")
     parser.add_argument("--only-cnn", type=str2bool, default=False, help="Only CNN model") 
 
-    ############################################# TEST #################################################
     parser.add_argument("--train-clients", type=int, default=-1, help="train first # clients")
     parser.add_argument("--test-clients", type=int, default=-1, help="")
     parser.add_argument("--test-more-model", type=str2bool, default=False, help="")
     parser.add_argument("--save-model", type=str2bool, default=False, help="")
-
     parser.add_argument("--hynet-dir", type=str, default="", help="")
     parser.add_argument("--fc-dir", type=str, default="", help="")
-
-    parser.add_argument("--alpha", type=float, default=0.01, help="0.01,0.05,0.1,0.15,0.2")
+    parser.add_argument("--alpha", type=float, default=0.2, help="0.01,0.05,0.1,0.15,0.2")
     parser.add_argument("--temp", type=int, default=15, help="5,10,15,20,25")
-
-    # cifar100-10
-    # parser.add_argument("--alpha", type=float, default=0.01, help="")
-    # parser.add_argument("--temp", type=int, default=20, help="15-20")
-
-    # tiny-50/100/200
-    # parser.add_argument("--alpha", type=float, default=0.15, help="")
-    # parser.add_argument("--temp", type=int, default=24, help="")
-
-    # tiny-10
-    # parser.add_argument("--alpha", type=float, default=0.01, help="")
-    # parser.add_argument("--temp", type=int, default=10, help="24")
-
-    # cifar10
-    # parser.add_argument("--alpha", type=float, default=0.01, help="")
-    # parser.add_argument("--temp", type=int, default=20, help="15_20")
-
-    # emnist200
-    # parser.add_argument("--alpha", type=float, default=0.1, help="0.01/0.2")
-    # parser.add_argument("--temp", type=int, default=20, help="10/50")
-
-
-    ############################################# More Model #################################################
-    # cifar100-50/100/200
-    # parser.add_argument("--alpha", type=float, default=0.01, help="")
-    # parser.add_argument("--temp", type=int, default=24, help="15-20")
-
-    # cifar100-10
-    # parser.add_argument("--alpha", type=float, default=0.01, help="")
-    # parser.add_argument("--temp", type=int, default=110, help="15-20")
-
-    # tiny-50/100/200
-    # parser.add_argument("--alpha", type=float, default=0.15, help="")
-    # parser.add_argument("--temp", type=int, default=24, help="")
-
-    # tiny-10
-    # parser.add_argument("--alpha", type=float, default=0.02, help="")
-    # parser.add_argument("--temp", type=int, default=30, help="15_20")
-
-    # cifar10
-    # parser.add_argument("--alpha", type=float, default=0.01, help="")
-    # parser.add_argument("--temp", type=int, default=20, help="15_20")
-
-    # emnist200
-    # parser.add_argument("--alpha", type=float, default=0.2, help="0.01/0.2")
-    # parser.add_argument("--temp", type=int, default=10, help="10/50")
-
 
     args = parser.parse_args()
     return args
